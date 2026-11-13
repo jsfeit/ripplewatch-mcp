@@ -25,6 +25,20 @@ Sign in to Ripplewatch when prompted and approve the connection.
 
 **ChatGPT.** Add the same URL as a custom MCP connector where your plan supports it, then sign in and approve.
 
+**Cursor.** [![Add to Cursor](https://cursor.com/deeplink/mcp-install-dark.svg)](cursor://anysphere.cursor-deeplink/mcp/install?name=ripplewatch&config=eyJ1cmwiOiJodHRwczovL3d3dy5yaXBwbGV3YXRjaC5haS9hcGkvbWNwIn0=)
+
+Click the button, confirm the install in Cursor, then choose Authenticate and sign in to Ripplewatch. Or add this to your `mcp.json` by hand:
+
+```json
+{
+  "mcpServers": {
+    "ripplewatch": {
+      "url": "https://www.ripplewatch.ai/api/mcp"
+    }
+  }
+}
+```
+
 **Developer tools (for example Claude Code).** Create an API key under Settings, then Developer, in your Ripplewatch account, and send it as a bearer token:
 
 ```bash
